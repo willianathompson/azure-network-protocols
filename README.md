@@ -34,7 +34,9 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  
+
 </p>
 <p>
 The project successfully deployed two Azure Virtual Machines (VMs), one running Windows 10 (21H2) and the other running Ubuntu Server 20.04. Remote Desktop (RDP) was configured for the Windows 10 VM, and SSH was set up for the Ubuntu Server VM, enabling secure administrative access to both VMs. Both VMs were connected to the same virtual network, ensuring seamless communication between them.
