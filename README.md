@@ -27,9 +27,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Deployment and Configuration of Azure Virtual Machines (VMs)
 - Configuration of Network Security Groups (NSGs)
-- Traffic Generation Between VMs
 - Traffic Inspection and Analysis with Wireshark
 - Evaluation and Adjustment of NSG Rules
+- Traffic Generation Between VMs
+
 
 <h2>Actions and Observations</h2>
 
@@ -60,10 +61,8 @@ Network Security Groups (NSGs) were set up to manage the incoming and outgoing t
 <p>
 
 ![image](https://github.com/user-attachments/assets/8d8bd0b7-a83e-42c7-ad7b-827306af09af)
-![image](https://github.com/user-attachments/assets/0d0c16a7-4d74-4e9c-a754-edaeaedd0710)
-capture observe network traffic
 ![image](https://github.com/user-attachments/assets/890654e2-2947-41c4-ada9-61fb7d2f723c)
-download wireshark, traffic observed
+
 </p>
 <p>
 Wireshark was downloaded to watch and analyze the network traffic between the Windows 10 and Ubuntu Server VMs. Traffic was sent between the VMs to check if the connection was working and if the security settings were set up properly. RDP was used to connect to the Windows 10 VM from the Ubuntu VM.
@@ -71,19 +70,10 @@ Wireshark was downloaded to watch and analyze the network traffic between the Wi
 <br />
 
 <p>
-window ICMP traffic
-  
-![image](https://github.com/user-attachments/assets/3ca9ae4d-40c0-4a01-8711-27bde450c709)
-ping windows to linux server IP
-![image](https://github.com/user-attachments/assets/4dce6460-50d1-4585-878e-5f38feff6499)
-![image](https://github.com/user-attachments/assets/3957c179-2b4c-4f96-b7b3-af0ba4667fb7)
-observe ping payload and traffic between hosts
-![image](https://github.com/user-attachments/assets/da688141-ecc0-4926-bb9f-efbdcc459fb1)
-observe source and desination IP
-![image](https://github.com/user-attachments/assets/6c359dd5-c658-4754-8898-d7d2faf13be1)
-perpetual ping 
-![image](https://github.com/user-attachments/assets/4830c1d1-81d8-4049-9ca9-25f9f9fbce99)
 
+![image](https://github.com/user-attachments/assets/4830c1d1-81d8-4049-9ca9-25f9f9fbce99)
+![image](https://github.com/user-attachments/assets/7508ef33-d0fe-4d9a-a346-34d4bbeda160)
+![image](https://github.com/user-attachments/assets/766ffb27-ad21-4f96-bab1-c6fadea06ab5)
 tested ICMP traffic (ping)
 </p>
 <p>
@@ -92,16 +82,10 @@ A perpetual ping was used to constantly test the ICMP traffic between the VMs, w
 <br />
 <p>
 
-start packet capture and filter for ssh traffic
-![image](https://github.com/user-attachments/assets/92df24ec-3e94-4cfc-a51c-58f3af561135)
-connect to linux vm ssh filter 
+ 
 ![image](https://github.com/user-attachments/assets/accdfbc4-31a1-42b7-9c9e-73d872216e12)
-![image](https://github.com/user-attachments/assets/724795e4-c949-4e37-94a5-6bb4356a934a)
-![image](https://github.com/user-attachments/assets/07c3be5f-408c-4c13-b63b-40ca4bbc1a4b)
-SSH connection closed
 ![image](https://github.com/user-attachments/assets/84f23c09-78ec-4484-a005-7c2b735d4cf4)
 
-observed SSH traffice
 </p>
 <p>
 
@@ -109,17 +93,15 @@ SSH traffic was observed in Wireshark by running simple commands on the Ubuntu V
 </p>
 <p>
   
-observe dhcp traffic
-run scipt
+
 ![image](https://github.com/user-attachments/assets/c14cbe16-9703-45a7-aeb1-c6f98e83c12f)
-release-discover-offer-reequest-ack
 ![image](https://github.com/user-attachments/assets/c9b786e8-e07a-4434-805d-4ae53a9e8ac8)
-DNS observe
+
 ![image](https://github.com/user-attachments/assets/4823a644-8cd6-46ef-b720-7efdb7028f63)
 ![image](https://github.com/user-attachments/assets/6315eac7-487e-4a0a-8450-23b4373540c6)
-rdp tcp.port == 3389
+
 ![image](https://github.com/user-attachments/assets/877b2320-f4d5-46c7-b0a7-b934ef4128de)
- observe dhcp dns and rdp traffice 
+
 </p>
 A simple script was run to watch the DHCP process, capturing the steps of release, discover, offer, request, and acknowledge messages. DNS was tested by checking if disney.com could be resolved, and the traffic was observed in Wireshark to make sure it worked properly. Also, RDP traffic was monitored to confirm that remote desktop connections were working correctly between the VMs.
 </p>
