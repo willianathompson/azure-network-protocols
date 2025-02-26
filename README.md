@@ -58,6 +58,7 @@ Successfully deployed two Azure Virtual Machines (VMs); one VM was running Windo
 </p>
 <p>
 Network Security Groups (NSGs) were set up to manage the incoming and outgoing traffic for both VMs. Specific rules were created for different protocols like SSH, RDP, DNS, and ICMP to make sure the right type of access was allowed based on the project’s security needs. These NSGs were applied directly to the network interface of each VM, ensuring their traffic was protected according to the set rules.
+
 </p>
 <br />
 
@@ -69,6 +70,7 @@ Network Security Groups (NSGs) were set up to manage the incoming and outgoing t
 </p>
 <p>
 Wireshark was downloaded to watch and analyze the network traffic between the Windows 10 and Ubuntu Server VMs. Traffic was sent between the VMs to check if the connection was working and if the security settings were set up properly. RDP was used to connect to the Windows 10 VM from the Ubuntu VM.
+
 </p>
 <br />
 
@@ -81,6 +83,7 @@ Wireshark was downloaded to watch and analyze the network traffic between the Wi
 </p>
 <p>
 A perpetual ping was used to constantly test the ICMP traffic between the VMs, with the network packets being checked to make sure the ping messages were sent and received correctly. The Network Security Group (NSG) rules were also tested to ensure the security settings were controlling the traffic as expected.
+
 </p>
 <br />
 <p>
@@ -93,6 +96,7 @@ A perpetual ping was used to constantly test the ICMP traffic between the VMs, w
 <p>
 
 SSH traffic was observed in Wireshark by running simple commands on the Ubuntu VM, such as id, ls, and hostname. These commands were sent over the network to the Windows 10 VM, and the resulting packets were captured and analyzed to ensure the SSH connection was secure and the traffic was flowing correctly between the VMs.
+
 </p>
 <p>
   
@@ -110,6 +114,7 @@ SSH traffic was observed in Wireshark by running simple commands on the Ubuntu V
 
 <p>
 A simple script was run to watch the DHCP process, capturing the steps of release, discover, offer, request, and acknowledge messages. DNS was tested by checking if disney.com could be resolved, and the traffic was observed in Wireshark to make sure it worked properly. Also, RDP traffic was monitored to confirm that remote desktop connections were working correctly between the VMs.
+
 </p>
 <br />
 <p>
