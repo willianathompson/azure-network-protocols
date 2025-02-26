@@ -53,7 +53,7 @@ Successfully deployed two Azure Virtual Machines (VMs); one VM was running Windo
 
 </p>
 <p>
-Network Security Groups (NSGs) were created and applied to control inbound and outbound traffic for both VMs. Specific rules were defined for protocols like SSH, RDP, DNS, and ICMP, ensuring that access was granted appropriately based on the project’s security requirements. These NSGs were applied at the network interface level on both VMs to secure their traffic according to the established rules.
+Network Security Groups (NSGs) were set up to manage the incoming and outgoing traffic for both VMs. Specific rules were created for different protocols like SSH, RDP, DNS, and ICMP to make sure the right type of access was allowed based on the project’s security needs. These NSGs were applied directly to the network interface of each VM, ensuring their traffic was protected according to the set rules.
 </p>
 <br />
 
@@ -66,7 +66,7 @@ capture observe network traffic
 download wireshark, traffic observed
 </p>
 <p>
-Traffic was generated between the Windows 10 and Ubuntu Server VMs to test connectivity and validate the security configurations. SSH was used to remotely manage both VMs, and RDP was accessed for Windows remote desktop connections from the Ubuntu VM. A basic web server was set up on the Ubuntu VM to test HTTP/S access from the Windows 10 VM. DNS resolution and ICMP (ping) connectivity were also tested between the two VMs.
+Wireshark was downloaded to watch and analyze the network traffic between the Windows 10 and Ubuntu Server VMs. Traffic was sent between the VMs to check if the connection was working and if the security settings were set up properly. RDP was used to connect to the Windows 10 VM from the Ubuntu VM.
 </p>
 <br />
 
@@ -87,7 +87,7 @@ perpetual ping
 tested ICMP traffic (ping)
 </p>
 <p>
-Wireshark was installed and used on both VMs to capture and analyze network traffic. Detailed packet information was captured for protocols like TCP/IP, SSH, HTTP/S, and ICMP, verifying that the data flow between the VMs was correct. The network packets were examined to ensure proper communication and confirm that the security rules were being followed.
+A perpetual ping was used to constantly test the ICMP traffic between the VMs, with the network packets being checked to make sure the ping messages were sent and received correctly. The Network Security Group (NSG) rules were also tested to ensure the security settings were controlling the traffic as expected.
 </p>
 <br />
 <p>
@@ -104,7 +104,8 @@ SSH connection closed
 observed SSH traffice
 </p>
 <p>
-After reviewing the Wireshark traffic analysis, it was confirmed that the NSG rules were correctly implemented to permit or block the necessary traffic. Any adjustments to the NSG configurations were made to ensure only authorized traffic was allowed between the VMs. The final step ensured that all required traffic was flowing securely and efficiently, in line with the project’s security protocols.
+
+SSH traffic was observed in Wireshark by running simple commands on the Ubuntu VM, such as id, ls, and hostname. These commands were sent over the network to the Windows 10 VM, and the resulting packets were captured and analyzed to ensure the SSH connection was secure and the traffic was flowing correctly between the VMs.
 </p>
 <p>
   
@@ -120,7 +121,7 @@ rdp tcp.port == 3389
 ![image](https://github.com/user-attachments/assets/877b2320-f4d5-46c7-b0a7-b934ef4128de)
  observe dhcp dns and rdp traffice 
 </p>
-The lab project successfully deployed the Azure VMs, configured Network Security Groups to secure traffic, and used Wireshark for network analysis to ensure that the communication between the VMs adhered to the specified security requirements.
+A simple script was run to watch the DHCP process, capturing the steps of release, discover, offer, request, and acknowledge messages. DNS was tested by checking if disney.com could be resolved, and the traffic was observed in Wireshark to make sure it worked properly. Also, RDP traffic was monitored to confirm that remote desktop connections were working correctly between the VMs.
 </p>
 <br />
 <p>
