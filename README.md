@@ -43,7 +43,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 ![image](https://github.com/user-attachments/assets/1ac38b9f-cb1f-4bb7-a8be-62c90aa38f54)
 ![image](https://github.com/user-attachments/assets/b5bfe402-fced-4971-8f1a-9de4f1657b16)
+</p>
+<br />
 
+<p>
 Successfully deployed two Azure Virtual Machines (VMs); one VM was running Windows 10 (22H2), and the other was running Ubuntu Server 20.04. Remote Desktop (RDP) was set up on the Windows 10 VM, and SSH was configured for the Ubuntu Server VM, allowing secure access to both. Both VMs were connected to the same virtual network, which made it easy for them to communicate with each other.
 </p>
 <br />
@@ -74,7 +77,7 @@ Wireshark was downloaded to watch and analyze the network traffic between the Wi
 ![image](https://github.com/user-attachments/assets/4830c1d1-81d8-4049-9ca9-25f9f9fbce99)
 ![image](https://github.com/user-attachments/assets/7508ef33-d0fe-4d9a-a346-34d4bbeda160)
 ![image](https://github.com/user-attachments/assets/766ffb27-ad21-4f96-bab1-c6fadea06ab5)
-tested ICMP traffic (ping)
+
 </p>
 <p>
 A perpetual ping was used to constantly test the ICMP traffic between the VMs, with the network packets being checked to make sure the ping messages were sent and received correctly. The Network Security Group (NSG) rules were also tested to ensure the security settings were controlling the traffic as expected.
@@ -103,6 +106,9 @@ SSH traffic was observed in Wireshark by running simple commands on the Ubuntu V
 ![image](https://github.com/user-attachments/assets/877b2320-f4d5-46c7-b0a7-b934ef4128de)
 
 </p>
+<br />
+
+<p>
 A simple script was run to watch the DHCP process, capturing the steps of release, discover, offer, request, and acknowledge messages. DNS was tested by checking if disney.com could be resolved, and the traffic was observed in Wireshark to make sure it worked properly. Also, RDP traffic was monitored to confirm that remote desktop connections were working correctly between the VMs.
 </p>
 <br />
