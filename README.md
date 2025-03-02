@@ -71,8 +71,12 @@ Network Security Groups (NSGs) are used to control the incoming and outgoing tra
 
 ![image](https://github.com/user-attachments/assets/8d8bd0b7-a83e-42c7-ad7b-827306af09af)
 
+</p>
+<p>
 Download Wireshark to observe the network traffic between the Windows 10 and Ubuntu Server VMs.
-
+</p>
+<p>
+  
 ![image](https://github.com/user-attachments/assets/890654e2-2947-41c4-ada9-61fb7d2f723c)
 
 </p>
@@ -85,12 +89,26 @@ Use RDP to connect to the Windows 10 VM from the Ubuntu VM. Open Wireshark to mo
 <p>
 
 ![image](https://github.com/user-attachments/assets/4830c1d1-81d8-4049-9ca9-25f9f9fbce99)
+
+</p>
+<p>
+A perpetual ping is used to constantly test the ICMP traffic between the VMs, with the network packets checked to make sure the ping messages are sent and received correctly.
+</p>
+<p>
+
 ![image](https://github.com/user-attachments/assets/7508ef33-d0fe-4d9a-a346-34d4bbeda160)
+
+</p>
+<p>
+The Network Security Group (NSG) rules are also tested to ensure the security settings are controlling the traffic as expected.
+</p>
+<p>
+
 ![image](https://github.com/user-attachments/assets/766ffb27-ad21-4f96-bab1-c6fadea06ab5)
 
 </p>
 <p>
-A perpetual ping was used to constantly test the ICMP traffic between the VMs, with the network packets being checked to make sure the ping messages were sent and received correctly. The Network Security Group (NSG) rules were also tested to ensure the security settings were controlling the traffic as expected.
+The ping is tested again and observed.  
 
 </p>
 <br />
