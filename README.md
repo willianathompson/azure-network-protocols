@@ -36,29 +36,38 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 </p>
 <p>
+<h4>Deployment and Configuration of Azure Virtual Machines (VMs)</h4>
+
+![image](https://github.com/user-attachments/assets/b5bfe402-fced-4971-8f1a-9de4f1657b16)
+
+<p>
+</p>
+Deploy an Azure VM running Ubuntu Server 20.04 and configure SSH for secure access.
+<p>
+</p>
 
 ![image](https://github.com/user-attachments/assets/1ac38b9f-cb1f-4bb7-a8be-62c90aa38f54)
-![image](https://github.com/user-attachments/assets/b5bfe402-fced-4971-8f1a-9de4f1657b16)
+
+</p>
+Deploy a second Azure VM running Windows 10 (22H2), ensuring it is on the same virtual network as the Ubuntu server to allow easy communication between the VMs. Remote Desktop (RDP) is set up on the Windows 10 VM.
+
+<p>
 </p>
 <br />
 
-<p>
-Successfully deployed two Azure Virtual Machines (VMs); one VM was running Windows 10 (22H2), and the other was running Ubuntu Server 20.04. Remote Desktop (RDP) was set up on the Windows 10 VM, and SSH was configured for the Ubuntu Server VM, allowing secure access to both. Both VMs were connected to the same virtual network, which made it easy for them to communicate with each other.
-</p>
-<br />
-
-<p>
+<h4>Configuration of Network Security Groups (NSGs)</h4>
 
 ![Screenshot 2025-02-25 2 59 54 PM](https://github.com/user-attachments/assets/e1051019-955b-436f-9b52-42dfdabc801f)
 
 </p>
 <p>
-Network Security Groups (NSGs) were set up to manage the incoming and outgoing traffic for both VMs. Specific rules were created for different protocols like SSH, RDP, DNS, and ICMP to make sure the right type of access was allowed based on the project’s security needs. These NSGs were applied directly to the network interface of each VM, ensuring their traffic was protected according to the set rules.
+Network Security Groups (NSGs) are used to control the incoming and outgoing traffic for both VMs. Rules are set up for different types of connections, like SSH, RDP, DNS, and ICMP, to make sure only the right kinds of access are allowed based on the security needs. These NSGs are applied to each VM’s network interface to protect their traffic.
 
 </p>
 <br />
 
 <p>
+<h4>Traffic Inspection and Analysis with Wireshark</h4>
 
 ![image](https://github.com/user-attachments/assets/8d8bd0b7-a83e-42c7-ad7b-827306af09af)
 ![image](https://github.com/user-attachments/assets/890654e2-2947-41c4-ada9-61fb7d2f723c)
