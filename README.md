@@ -70,11 +70,14 @@ Network Security Groups (NSGs) are used to control the incoming and outgoing tra
 <h4>Traffic Inspection and Analysis with Wireshark</h4>
 
 ![image](https://github.com/user-attachments/assets/8d8bd0b7-a83e-42c7-ad7b-827306af09af)
+
+Download Wireshark to observe the network traffic between the Windows 10 and Ubuntu Server VMs.
+
 ![image](https://github.com/user-attachments/assets/890654e2-2947-41c4-ada9-61fb7d2f723c)
 
 </p>
 <p>
-Wireshark was downloaded to watch and analyze the network traffic between the Windows 10 and Ubuntu Server VMs. Traffic was sent between the VMs to check if the connection was working and if the security settings were set up properly. RDP was used to connect to the Windows 10 VM from the Ubuntu VM.
+Use RDP to connect to the Windows 10 VM from the Ubuntu VM. Open Wireshark to monitor the traffic between the VMs.
 
 </p>
 <br />
