@@ -96,11 +96,17 @@ A perpetual ping is used to constantly test the ICMP traffic between the VMs, wi
 </p>
 <p>
 
+<h4>Evaluation and Adjustment of NSG Rules</h4>
+  
+![Screenshot 2025-02-25 2 59 54 PM](https://github.com/user-attachments/assets/e1051019-955b-436f-9b52-42dfdabc801f)
+
+The Network Security Group (NSG) rules are instated and tested to ensure the security settings are controlling the traffic as expected. 
+  
 ![image](https://github.com/user-attachments/assets/7508ef33-d0fe-4d9a-a346-34d4bbeda160)
 
 </p>
 <p>
-The Network Security Group (NSG) rules are also tested to ensure the security settings are controlling the traffic as expected.
+The NSG rules are observed and noted in Wireshark to monitor the traffic flow.
 </p>
 <p>
 
@@ -108,12 +114,12 @@ The Network Security Group (NSG) rules are also tested to ensure the security se
 
 </p>
 <p>
-The ping is tested again and observed.  
+Then, the NSG rules are relaxed to allow more traffic and observed again in Wireshark to see the changes. Finally, the impact of the relaxed rules is assessed by comparing the observed traffic with the previous settings.  
 
 </p>
 <br />
 <p>
-
+<h4>Traffic Generation Between VMs</h4>
  
 ![image](https://github.com/user-attachments/assets/accdfbc4-31a1-42b7-9c9e-73d872216e12)
 ![image](https://github.com/user-attachments/assets/84f23c09-78ec-4484-a005-7c2b735d4cf4)
