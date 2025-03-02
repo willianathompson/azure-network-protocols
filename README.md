@@ -122,12 +122,19 @@ Then, the NSG rules are relaxed to allow more traffic and observed again in Wire
 <h4>Traffic Generation Between VMs</h4>
  
 ![image](https://github.com/user-attachments/assets/accdfbc4-31a1-42b7-9c9e-73d872216e12)
+
+</p>
+<p>
+Using PowerShell to log into the Ubuntu server allows for SSH traffic to be observed in Wireshark.
+</p>
+<p>
+  
 ![image](https://github.com/user-attachments/assets/84f23c09-78ec-4484-a005-7c2b735d4cf4)
 
 </p>
 <p>
 
-SSH traffic was observed in Wireshark by running simple commands on the Ubuntu VM, such as id, ls, and hostname. These commands were sent over the network to the Windows 10 VM, and the resulting packets were captured and analyzed to ensure the SSH connection was secure and the traffic was flowing correctly between the VMs.
+Running simple commands on the Ubuntu VM, such as id, ls, and hostname, sends these commands over the network to the Windows 10 VM. The resulting packets are captured and analyzed to ensure the SSH connection is secure and the traffic flows correctly between the VMs.
 
 </p>
 <p>
