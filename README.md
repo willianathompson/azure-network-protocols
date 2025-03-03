@@ -114,7 +114,7 @@ The NSG rules are observed and noted in Wireshark to monitor the traffic flow.
 
 </p>
 <p>
-Then, the NSG rules are relaxed to allow more traffic and observed again in Wireshark to see the changes. Finally, the impact of the relaxed rules is assessed by comparing the observed traffic with the previous settings.  
+Then, the NSG rules are relaxed to allow more traffic and observed again in Wireshark to see the changes. The impact of the relaxed rules is assessed by comparing the observed traffic with the previous settings.  
 
 </p>
 <br />
