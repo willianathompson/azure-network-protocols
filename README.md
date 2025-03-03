@@ -141,18 +141,43 @@ Running simple commands on the Ubuntu VM, such as id, ls, and hostname, sends th
   
 
 ![image](https://github.com/user-attachments/assets/c14cbe16-9703-45a7-aeb1-c6f98e83c12f)
+
+</p>
+<p>
+A simple script is run to watch the DHCP process.
+</p>
+<p>
+
 ![image](https://github.com/user-attachments/assets/c9b786e8-e07a-4434-805d-4ae53a9e8ac8)
 
+</p>
+<p>
+Wireshark captures the steps of release, discover, offer, request, and acknowledge messages.
+</p>
+<p>
+
 ![image](https://github.com/user-attachments/assets/4823a644-8cd6-46ef-b720-7efdb7028f63)
+
+</p>
+<p>
+DNS was tested by checking if disney.com could be resolved, and the traffic was monitored in Wireshark to ensure it was working properly.
+</p>
+<p>
+
 ![image](https://github.com/user-attachments/assets/6315eac7-487e-4a0a-8450-23b4373540c6)
+
+</p>
+<p>
+The provided IP address is also tested in a web browser to confirm it is correct.
+</p>
+<p>
 
 ![image](https://github.com/user-attachments/assets/877b2320-f4d5-46c7-b0a7-b934ef4128de)
 
 </p>
-<br />
 
 <p>
-A simple script was run to watch the DHCP process, capturing the steps of release, discover, offer, request, and acknowledge messages. DNS was tested by checking if disney.com could be resolved, and the traffic was observed in Wireshark to make sure it worked properly. Also, RDP traffic was monitored to confirm that remote desktop connections were working correctly between the VMs.
+Also, RDP traffic between the VMs is monitored to capture the amount of information being processed through the remote connection.
 
 </p>
 <br />
