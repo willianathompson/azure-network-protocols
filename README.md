@@ -73,7 +73,7 @@ Network Security Groups (NSGs) are used to control the incoming and outgoing tra
 
 </p>
 <p>
-Download Wireshark to observe the network traffic between the Windows 10 and Ubuntu Server VMs.
+Use RDP to connect to the Windows 10 VM from the Ubuntu server VM. Download Wireshark to observe the network traffic between the Windows 10 and Ubuntu Server VMs.
 </p>
 <p>
   
@@ -81,7 +81,7 @@ Download Wireshark to observe the network traffic between the Windows 10 and Ubu
 
 </p>
 <p>
-Use RDP to connect to the Windows 10 VM from the Ubuntu VM. Open Wireshark to monitor the traffic between the VMs.
+Open Wireshark to monitor the traffic between the VMs.
 
 </p>
 <br />
