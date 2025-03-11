@@ -42,7 +42,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <p>
 </p>
-Deploy an Azure VM running Ubuntu Server 20.04 and configure SSH for secure access.
+Deploy an Azure VM running Ubuntu Server 20.04 and configure Secure Shell (SSH) for secure access.
 <p>
 </p>
 
