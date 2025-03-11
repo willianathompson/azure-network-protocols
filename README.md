@@ -168,7 +168,7 @@ DNS was tested by checking if disney.com could be resolved, and the traffic was 
 
 </p>
 <p>
-The provided IP address is also tested in a web browser to confirm it is correct.
+The provided IP address is also tested in a web browser to confirm it is related to Disney.
 </p>
 <p>
 
