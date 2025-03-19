@@ -134,7 +134,7 @@ Using PowerShell to log into the Ubuntu server allows for SSH traffic to be obse
 </p>
 <p>
 
-Running simple commands on the Ubuntu VM, such as id, ls, and hostname, sends these commands over the network to the Windows 10 VM. The resulting packets are captured and analyzed to ensure the SSH connection is secure and the traffic flows correctly between the VMs.
+Running simple commands on the Ubuntu VM, such as `id `, `ls`, and `hostname`, sends these commands over the network to the Windows 10 VM. The resulting packets are captured and analyzed to ensure the SSH connection is secure and the traffic flows correctly between the VMs.
 
 </p>
 <p>
