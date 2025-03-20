@@ -178,7 +178,9 @@ The provided IP address is also tested in a web browser to confirm it is related
 
 <p>
 Also, RDP traffic between the VMs is monitored to capture the amount of information being processed through the remote connection.
-
+<p>
+</p>
+With the configuration and analysis of Network Security Groups and traffic between Azure Virtual Machines now complete, there is a better understanding of how to manage and inspect protocols such as ICMP, DNS, DHCP, and RDP. This knowledge can help refine security policies and optimize network configurations.
 </p>
 <br />
 <p>
