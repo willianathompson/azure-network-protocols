@@ -57,7 +57,8 @@ Deploy a second Azure VM running Windows 10 (22H2), ensuring it is on the same v
 
 <h4>Configuration of Network Security Groups (NSGs)</h4>
 
-![Screenshot 2025-02-25 2 59 54 PM](https://github.com/user-attachments/assets/e1051019-955b-436f-9b52-42dfdabc801f)
+![Screenshot 2025-03-25 12 38 13 PM](https://github.com/user-attachments/assets/07951bdd-0a6b-41c3-b763-d017ec3ab6fd)
+
 
 </p>
 <p>
